@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CyberTest" preserve-order="true" >
+    <listeners>
+        <listener class-name="com.cyberai.util.ExtentTestNGIReporterListener" />
+        <listener class-name="com.cyberai.util.TestNgListener" />
+    </listeners>
+    <test name="CyberAITest" preserve-order="true">
+        <classes>
+            <class name="com.cyberai.testCase.CyberAITest">
+                <methods>
+                    <include name="testMain" />
+                </methods>
+            </class>
+            <class name="com.cyberai.util.CyberDataProvider" />
+        </classes>
+    </test>
+</suite>
